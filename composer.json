@@ -1,0 +1,32 @@
+{
+  "name": "dkp/sg-diditask",
+  "description": "A module for SeAT that tracks DiDiTask requests",
+  "type": "seat-plugin",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Yu Peng",
+      "email": "753985517@qq.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "DiDiTask\\Seat\\SeatDiDiTask\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DiDiTask\\Seat\\SeatDiDiTask\\DiDiTaskServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "eveseat/services": "^4.1",
+    "eveseat/eveapi": "^4.0",
+    "eveseat/web": "^4.0",
+    "eveseat/eseye": "^2.0"
+  }
+}
