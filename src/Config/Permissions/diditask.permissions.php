@@ -1,8 +1,8 @@
 <?php
 /**
  * User: Yu Peng
- * Date: 2023-3-1
- * Remark: 本文件为DKP模块权限设定
+ * Date: 2023-6-2
+ * Remark: 本文件为滴滴任务模块权限设定
  */
 
 return [

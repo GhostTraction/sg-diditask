@@ -11,14 +11,14 @@ Route::group([
     ], function () {
 
         Route::get('/', [
-            'as' => 'diditask.minelist',
-            'uses' => 'DiDiTaskController@getMineDkp',
+            'as' => 'diditask.publishTask',
+            'uses' => 'DiDiTaskController@publishTask',
             'middleware' => 'can:diditask.request',
         ]);
 
-        Route::get('/commodity', [
-            'as' => 'diditask.commodity',
-            'uses' => 'DiDiTaskController@commodity',
+        Route::get('/acceptTask', [
+            'as' => 'diditask.acceptTask',
+            'uses' => 'DiDiTaskController@acceptTask',
             'middleware' => 'can:diditask.request',
         ]);
     });
