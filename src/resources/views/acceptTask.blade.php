@@ -14,7 +14,19 @@
 @section('full')
     <div class="card card-primary card-solid">
         <div class="card-body">
-            累计获取:123
+            <div class="col-sm-9">
+                <form action="{{ route('diditask.getMission') }}" method="post" id="formCreateSetting">
+                    在此处粘贴 [待接受] 的信标名
+                    <textarea type="text" class="form-control" name="missionList" id="missionList" rows="5">
+                </textarea>
+                    {{ csrf_field() }}
+                </form>
+                <br>
+                <button type="button" class="btn btn-xs btn-primary srp-status" id="getMission"
+                        value="Primary">接受任务
+                </button>
+
+            </div>
         </div>
     </div>
     <br>
@@ -102,11 +114,15 @@
                     dataType: 'json',
                     timeout: 5000
                 }).done(function (data) {
-                    alert(JSON.stringify(data))
                     location.reload(bForceGet = true);
                 });
 
             });
+            $('#getMission').click(function () {
+                $('#formCreateSetting').submit();
+            });
         });
+
+
     </script>
 @endpush

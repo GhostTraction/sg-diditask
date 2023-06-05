@@ -28,5 +28,17 @@ Route::group([
             'middleware' => 'can:diditask.request',
         ])->where(['action' => 'Success|Abandon|Delete']);
 
+        Route::post('/getMission', [
+            'as' => 'diditask.getMission',
+            'uses' => 'DiDiTaskController@getMission',
+            'middleware' => 'can:diditask.request',
+        ]);
+        Route::post('/submitMission', [
+            'as' => 'diditask.submitMission',
+            'uses' => 'DiDiTaskController@submitMission',
+            'middleware' => 'can:diditask.request',
+        ]);
+
+
     });
 });
