@@ -1,5 +1,5 @@
 {
-  "name": "dkp/sg-diditask",
+  "name": "diditask/sg-diditask",
   "description": "A module for SeAT that tracks DiDiTask requests",
   "type": "seat-plugin",
   "license": "GPL-2.0",
