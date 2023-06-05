@@ -3,7 +3,7 @@
 
 php artisan down
 
-composer require dkp/sg-diditask
+composer require diditask/sg-diditask
 
 php artisan vendor:publish --force
 
