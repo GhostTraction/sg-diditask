@@ -21,5 +21,12 @@ Route::group([
             'uses' => 'DiDiTaskController@acceptTask',
             'middleware' => 'can:diditask.request',
         ]);
+
+        Route::get('/acceptTask/{kill_id}/{action}', [
+            'as' => 'diditask.changeStatus',
+            'uses' => 'DiDiTaskController@changeStatus',
+            'middleware' => 'can:diditask.request',
+        ])->where(['action' => 'Success|Abandon|Delete']);
+
     });
 });

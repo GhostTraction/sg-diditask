@@ -8,10 +8,10 @@
 return [
     'request' => [
         'label' => 'Request',
-        'description' => '能够查询本账号DKP以及DKP所兑商品',
+        'description' => '能够查询本账号diditask',
     ],
     'admin' => [
         'label' => 'admin',
-        'description' => '允许配置全局DKP设置',
+        'description' => '允许配置全局diditask设置',
     ],
 ];
