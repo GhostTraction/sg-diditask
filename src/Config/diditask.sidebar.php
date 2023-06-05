@@ -6,7 +6,7 @@
  */
 
 return [
-    'dkp' => [
+    'diditask' => [
         'name' => '滴滴任务',
         'icon' => 'fas fa-rocket',
         'route_segment' => 'diditask',
