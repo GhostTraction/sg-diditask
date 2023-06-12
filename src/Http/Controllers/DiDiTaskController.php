@@ -11,7 +11,7 @@ use Seat\Web\Http\Controllers\Controller;
  */
 function sendPostRequest($interface, $data)
 {
-    $url = 'http://wx.eve-sg.com/' . $interface . "?API_AuthKey=AgLERU00O9QkovxS"; // 替换为实际的目标地址
+    $url = 'http://xxx.com/' . $interface . "?API_AuthKey=12345678"; // 替换为实际的目标地址
 
     // 将数据转换为 JSON
     $jsonData = json_encode($data);
